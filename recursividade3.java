@@ -8,14 +8,13 @@ public class recursividade3 {
     }
 
     static double calcularRecursiva3(double num){
-        double serie;
-        if(num>1){
-            serie=1/num+calcularRecursiva3(num-1);    
+        double serie=0;
+        if(num>=1){
+             serie=1/num+calcularRecursiva3(num-1);
             System.out.println(serie);
-            return serie;
+            
         }
-        return num;
-        
+        return serie;
         // 1/3  
         // 1/2 0,5
         // 1/1 1
