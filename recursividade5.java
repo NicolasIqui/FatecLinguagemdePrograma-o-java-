@@ -17,8 +17,9 @@ public class recursividade5 {
 
     static int calcFatorial(int num){
         int fat=1;
-        for (int i=num;i>=1;i--){
-            fat=i*fat;
+        if(num>=1){
+            fat=num*calcFatorial(num-1);
+          
         }
         return fat;
     }
